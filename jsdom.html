@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script>
+            const titleElements = document.getElementsByTagName('li');
+            console.log(titleElements.length);
+
+            console.log(document.querySelectorAll("#west li").length);
+            console.log(document.querySelectorAll("#east li").length);
+
+        </script>
+    </head>
+
+    <body>
+        <h1>Basketball Teams</h1>
+        <input type="button" id="elements">
+        <input type="button" id="first">
+        <input type="button" id="second">
+        <ul style="list-style-type:none;">
+            <div id="west">
+            <li class="team">Los Angeles Lakers</li>
+            </div>
+            <div id="east">
+            <li class="team">Chicago Bulls</li>
+            <li class="team">Boston Celtics</li>
+            <li class="team">Brooklyn Nets</li>
+            <li class="team">New York Knicks</li>
+            <li class="team">Cleveland Cavaliers</li>
+            </div>
+            <div id="west">
+            <li class="team">Golden State Warriors</li>
+            <li class="team">Utah Jazz</li>
+            </div>
+            <div id="east">
+            <li class="team">Miami Heat</li>
+            <li class="team">Milwaukee Bucks</li>
+            </div>
+        </ul>
+        <div id="pageElements"></div>
+        <div id="firstElement"></div>
+        <div id="secondElement"></div>
+    </body>
+</html>
