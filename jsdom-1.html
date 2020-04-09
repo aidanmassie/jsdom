@@ -1,20 +1,27 @@
 <html>
     <head>
         <script>
-            const titleElements = document.getElementsByTagName('li');
-            console.log(titleElements.length);
+            function button1(){
+                document.getElementById("pageElements").innerHTML= "There are " + document.querySelectorAll("li").length + " teams total!";
+            }
 
-            console.log(document.querySelectorAll("#west li").length);
-            console.log(document.querySelectorAll("#east li").length);
+            function button2(){
+                document.getElementById("firstElement").innerHTML= "There are " + document.querySelectorAll("#west li").length + " teams from the Western Conference!";
+            }
+
+            function button3(){
+                document.getElementById("secondElement").innerHTML= "There are " + document.querySelectorAll("#east li").length + " teams from the Eastern Conference!";
+            }
+            
 
         </script>
     </head>
 
     <body>
         <h1>Basketball Teams</h1>
-        <input type="button" id="elements">
-        <input type="button" id="first">
-        <input type="button" id="second">
+        <button onclick="button1()"></button>
+        <button onclick="button2()"></button>
+        <button onclick="button3()"></button>
         <ul style="list-style-type:none;">
             <div id="west">
             <li class="team">Los Angeles Lakers</li>
